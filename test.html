@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head profile="http://www.w3.org/2005/10/profile">
+		<link rel="icon" type="image/png" href="http://example.com/coolpic9000grd.png">
+		<title>Awesome Page 345 Coolness</title>
+		<meta propert="upcInfo" content="123456789012">
+	</head>
+	<body>
+		<div class="great31div">
+			<div id="subDiv972-10fact">
+				<p>2345678901234</p>
+			</div>
+		</div>
+	<script>
+		var upc = [(_UPC_CONTENT_, '123456789012',"EAN_VALUE1_",1234567890123)];	
+	</script>
+	</body>
+</html>
+<script>
+	var str = document.documentElement.outerHTML;
+	var numberString = "";
+	var patt=/[0-9]+/g;
+	var check = true;
+	while(check)
+	{
+		var result=patt.exec(str);
+		if(result)
+		{
+			//alert( result[0].length);
+			if (result[0].length == 12 ) {
+				alert(result);
+			}
+		}else
+		{
+			check = false;
+		}
+			
+	
+	}
+	
+</script>
